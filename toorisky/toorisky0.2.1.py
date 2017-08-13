@@ -24,7 +24,7 @@ def play():
         threedone = "1"
         threedtwo = "2"
         print("YOU: I'm going to go walk to the other beach, which is 30 minutes away.")
-        cprint("NARRATOR: Then, Amy catches up with you.")
+        cprint("NARRATOR: Then, Amy catches up with you.", "grey", "on_white")
         text = colored("AMY: Hey " + personname + ". You wanna go rock jumping?", "blue")
         print(text)
         time.sleep(2)
@@ -70,13 +70,13 @@ def play():
                 print(text)
                 home()
             else:
-                if decisionfour == fourdtwo:
+                if decisionfour == fourdtwo: # Decision 4 Option 2
                     sixdone = "1"
                     sixdtwo = "2"
                     text = colored("AMY: Chicken.", "blue")
                     print(text)
                     time.sleep(1)
-                    print("Yeah, right. See you around Amy.")
+                    print("YOU: Yeah, right. See you around Amy.")
                     cprint("NARRATOR: You meet up with Sam, and he says he's up to the beach.", "grey", "on_white")
                     time.sleep(1)
                     text = colored("SAM: Hey! How are things going " + personname + "?", "magenta")
@@ -95,9 +95,9 @@ def play():
                         text = colored("SAM: Here you go.", "magenta")
                         print(text)
                         time.sleep(1)
-                        print("Hey, I think it's biting me.")
+                        print("YOU: Hey, I think it's biting me.")
                         time.sleep(1)
-                        print("Ouch! That hurts!")
+                        print("YOU: Ouch! That hurts!")
                         text = colored("Fluffly clouds! I think that we were both being too risky.")
                         print(text)
                         text = colored("Game over. You made 2 good choices and 1 bad choice. To play again, type 'play'.", "red", attrs=["bold"])
@@ -105,11 +105,16 @@ def play():
                         home()
                     else:
                         if decisionsix == sixdtwo:
-                            print("Sorry, but I don't know what crab that is. It looks poisonous.")
+                            print("YOU: Sorry, but I don't know what crab that is. It looks poisonous.")
                             text = colored("SAM: Yeah. On second thoughts we might have been TOO RISKY.", "magenta")
                             print(text)
                             text = colored("You have finished the game. You made a lot of good decisions today. To play again, type 'play'.", "red", attrs=["bold"])
-                            home()                            
+                            home()
+                        else:
+                            text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
+                            print(text)
+                            home()
+                             
                                         
                     
                     
@@ -161,18 +166,18 @@ def play():
                                 print(text)
                                 home()
                             else:
-                                text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki/Error:-Invalid-Command-(Error-code:-x000001)", "red")
+                                text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
                                 print(text)
                                 home()
                                 
                     else:
-                        text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki/Error:-Invalid-Command-(Error-code:-x000001)", "red")
+                        text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
                         print(text)
                         home()
  
                     
             else:
-                text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki/Error:-Invalid-Command-(Error-code:-x000001)", "red")
+                text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
                 print(text)
                 home()
  
@@ -194,7 +199,7 @@ def play():
              text = colored("LIFEGUARD: You're lucky you made it alive. Did you see the sign that said the beach was closed?", "cyan")
              print(text)
              time.sleep(2)
-             cprint("Should " + personname + " be honest and say the truth, or lie to get out of trouble? Type '1' to be honest. Type '2' to lie.", "grey", "on_white")
+             cprint("NARRATOR: Should " + personname + " be honest and say the truth, or lie to get out of trouble? Type '1' to be honest. Type '2' to lie.", "grey", "on_white")
              decisiontwo = raw_input("")
              if decisiontwo == twodone: # Decision 2 Option 1
                    text = colored("LIFEGUARD: You're very naughty. What you did was TOO RISKY.", "grey", "on_white")
@@ -210,7 +215,7 @@ def play():
                      print(text)
                      home()
                  else: # Invalid command, crash failsafe.
-                    text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki/Error:-Invalid-Command-(Error-code:-x000001)", "red")
+                    text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
                     print(text)
                     home()
  
@@ -249,10 +254,10 @@ def home():
                 text = colored("Too Risky was developed by Adrian Widjaja in the Python Programming Language. Too Risky is released under the GNU General Public Licence. Our source code is online at https://github.com/airswidjaja/TooRisky.py.", "red")
                 print(text)
                 print("")
-                text = colored("Jacinta helped to test this program. Thanks Jacinta!", "magenta")
+                text = colored("Jacinta, Maxime and Justin helped to test this program. Thanks guys!", "magenta")
                 print(text)
                 print("")
-                text = colored("This version of Too Risky is 0.1. This is an early access version. Bugs may be present.", "red")
+                text = colored("This version of Too Risky is 0.2.1. This is an early access version. Bugs may be present.", "red")
                 print(text)
                 print("")
                 text = colored("List of commands: play (starts the game), nerdstuff (displays commands and about section), about (displays information on how to play the game.", "red")
@@ -263,7 +268,7 @@ def home():
                     home()
                 else:
                     print("")
-                    text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki/Error:-Invalid-Command-(Error-code:-x000001Q)", "red")
+                    text = colored("Error: Invalid Command (Error Code x000001). For more information, visit https://github.com/airswidjaja/TooRisky.py/wiki.", "red")
                     print(text)
                     print("")
                     home()
@@ -275,7 +280,7 @@ def devtool():
 
 print("")
 print("")
-text = colored("Too Risky 0.1 is provided under the GNU General Public License. Our source code is available on GitHub at https://github.com/airswidjaja/TooRisky.py. WARNING: Your terminal client software must support ASCII colour formatting. If not, some characters may not render as intended.", 'red', attrs=["bold"])
+text = colored("Too Risky is provided under the GNU General Public License. Our source code is available on GitHub at https://github.com/airswidjaja/TooRisky.py. WARNING: Your terminal client software must support ASCII colour formatting. If not, some characters may not render as intended.", 'red', attrs=["bold"])
 print(text)
 print("")
 text = colored("Welcome to Too Risky! To start the game, type 'play'. To learn more about the game, type 'about'. ", "red", attrs=["bold"])
