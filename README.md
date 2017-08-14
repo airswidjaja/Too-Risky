@@ -7,6 +7,8 @@ Too Risky is a story-based, educational computer game that runs in command line 
 
 This is the official GitHub page: github.com/airswidjaja/TooRisky.py Yeah! I'm still trying to figure out GitHub, so thanks for being patient.
 
+As of 14 August 3:52 and 37 seconds this program has been discontinued.
+
 You can email me about the project with this email address: adrian.marcus.widjaja@gmail.com. If you spam, you're putting yourself at risk of a very angry Adrian. You could say, spamming me is TOO RISKY. Ho ho ho.
 
 Thanks. 
