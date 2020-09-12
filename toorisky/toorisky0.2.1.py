@@ -5,7 +5,7 @@ from termcolor import colored, cprint
 # Last updated Wed 9 Aug 2017 AEST
 
 # Oi! Why you looking at my shoddy programming?
-# Yeah. Open-source and licenced under the GNU General Public Licence. Check me out on YouTube: youtube.com/c/AdrianWidjaja.
+# Yeah. Open-source and licenced under the GNU General Public Licence. 
 # Gameplay
 def play():
     onedone = "1"
