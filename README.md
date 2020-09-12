@@ -9,10 +9,8 @@ This is the official GitHub page: github.com/airswidjaja/TooRisky.py Yeah! I'm s
 
 As of 14 August 3:52 and 37 seconds this program has been discontinued.
 
-You can email me about the project with this email address: adrian.marcus.widjaja@gmail.com. If you spam, you're putting yourself at risk of a very angry Adrian. You could say, spamming me is TOO RISKY. Ho ho ho.
-
 Thanks. 
 
-- Adrian Widjaja, lead and only developer of Too Risky.
+- Adrian, lead and only developer of Too Risky.
 
 #imaloner
